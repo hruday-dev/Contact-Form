@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap');
+:root{
+/* Primary */
+--Green200 : hsl(148, 38%, 91%);
+--Green600 : hsl(169, 82%, 27%);
+--Red: hsl(0, 66%, 54%);
+/* Neutral */
+--Grey500: hsl(186, 15%, 59%);
+--Grey900: hsl(187, 24%, 22%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+.error{
+    display: none;
+}
+.mail-error{
+    display: none;
+}
+#success-message{
+    display: none;
+}
+html{
+    font-size: 16px;
+}
+main{
+    background-color: var(--Green200);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 90%;
+    background-color: white;
+    padding: 1rem;
+    color: var(--Grey900);
+    display: flex;
+    flex-direction: column;
+}
+#firstname,#lastname,#email,textarea{
+    width: 100%;
+    padding: 0.7rem 15px;
+    border: 1px solid var(--Grey500);
+    outline: none;
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem;
+}
+input:focus{
+    outline: 1px solid var(--Green600);
+}
+h1{
+    margin-bottom: 1rem;
+}
+.choices > div{
+    border: 1px solid var(--Grey500);
+    padding: 1rem;
+    margin: 0.8rem 0;
+}
