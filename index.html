@@ -16,12 +16,16 @@
     <form action="">
       <h1>Contact Us</h1>
       <div class="fullname">
-        <label for="firstname">First Name <span>*</span></label><br>
-        <input type="text" name="firstname" id="firstname"><br>
-        <p class="error">This field is required</p>
-        <label for="lastname">Last Name <span>*</span></label><br>
-        <input type="text" name="lastname" id="lastname">
-        <p class="error">This field is required</p>
+        <div>
+          <label for="firstname">First Name <span>*</span></label><br>
+          <input type="text" name="firstname" id="firstname"><br>
+          <p class="error">This field is required</p>
+        </div>
+        <div>
+          <label for="lastname">Last Name <span>*</span></label><br>
+          <input type="text" name="lastname" id="lastname">
+          <p class="error">This field is required</p>
+        </div>
       </div>
       <div class="email-adrs">
         <label for="email">Email Address <span>*</span></label><br>
@@ -31,8 +35,10 @@
       </div>
       <div class="choices">
         <label for="option">Query Type <span>*</span></label><br>
-        <div><input type="radio" name="option" id="option">General Enquiry</div>
-        <div><input type="radio" name="option" id="option">Support Request</div>
+        <div class="both">
+          <label for="gn"><input type="radio" name="option" id="gn"> General Enquiry</label> <br>
+          <label for="sp"><input type="radio" name="option" id="sp"> Support Request</label>
+        </div>
         <p class="error">Please select a query type</p><br>
       </div>
       <div id="text-message">
@@ -41,10 +47,10 @@
         <p class="error">This field is required</p>
       </div>
       <div class="terms">
-        <input type="checkbox" name="terms" id="terms"> <label for="terms">I consent to being contacted by the team</label>
+        <input type="checkbox" name="terms" id="terms"> <label for="terms">I consent to being contacted by the team <span>*</span></label>
         <p class="error">To submit this form, please consent to being contacted</p>
       </div>
-      <input type="submit" value="Submit">
+      <button type="submit">Submit</button>
     </form>
     <div id="success-message">
       <div>
