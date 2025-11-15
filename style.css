@@ -14,11 +14,17 @@
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
 }
+.errorborder{
+    border: 1px solid var(--Red);
+}
 .error{
     display: none;
+    margin: 0.5rem 0;
+    color: var(--Red);
 }
 .mail-error{
     display: none;
+    color: var(--Red);
 }
 html{
     font-size: 16px;
@@ -53,7 +59,7 @@ textarea{
     height: 10rem;
 }
 input:focus,textarea:focus{
-    outline: 1px solid var(--Green600);
+    outline: 2px solid var(--Green600);
 }
 h1{
     margin-bottom: 1rem;
