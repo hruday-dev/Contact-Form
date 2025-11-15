@@ -19,7 +19,7 @@
 }
 .error{
     display: none;
-    margin: 0.5rem 0;
+    margin-bottom: 10px;
     color: var(--Red);
 }
 .mail-error{
@@ -113,11 +113,11 @@ span{
         width: 65%;
         max-width: 600px;
     }
-    .fullname,.both{
+    #fullname,.both{
         display: flex;
         gap: 1rem;
     }
-    .fullname > div,.both > label{
+    #fullname > div,.both > label{
         width: 50%;
     }
     #success-message{
